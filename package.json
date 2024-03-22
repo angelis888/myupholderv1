@@ -1,0 +1,22 @@
+{
+  "name": "myupholderv1",
+  "version": "1.0.0",
+  "description": "Ayuda a la gestion emocional",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "n"
+  },
+  "keywords": [
+    "n"
+  ],
+  "author": "Angelis",
+  "license": "ISC"
+}

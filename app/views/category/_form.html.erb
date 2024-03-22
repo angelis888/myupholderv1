@@ -1,0 +1,57 @@
+<%= form_with(model: category) do |form| %>
+  <% if category.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(category.errors.count, "error") %> prohibited this category from being saved:</h2>
+
+      <ul>
+        <% category.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :angry, style: "display: block" %>
+    <%= form.text_field :angry %>
+  </div>
+
+  <div>
+    <%= form.label :anxious, style: "display: block" %>
+    <%= form.text_field :anxious %>
+  </div>
+
+  <div>
+    <%= form.label :jealous, style: "display: block" %>
+    <%= form.text_field :jealous %>
+  </div>
+
+  <div>
+    <%= form.label :lonely, style: "display: block" %>
+    <%= form.text_field :lonely %>
+  </div>
+
+  <div>
+    <%= form.label :sad, style: "display: block" %>
+    <%= form.text_field :sad %>
+  </div>
+
+  <div>
+    <%= form.label :unmotivated, style: "display: block" %>
+    <%= form.text_field :unmotivated %>
+  </div>
+
+  <div>
+    <%= form.label :title, style: "display: block" %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.label :body, style: "display: block" %>
+    <%= form.text_area :body %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
